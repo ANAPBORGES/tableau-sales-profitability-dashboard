@@ -346,6 +346,11 @@
           <datasources>
             <datasource caption='Superstore' name='federated.superstore' />
           </datasources>
+          <!-- Required by the worksheet content model:
+               (datasources?, mapsources?, datasource-dependencies*,
+                filter, sort, perspectives, slices?, aggregation)
+               Omitting <aggregation> fails the load with D2E8DA72. -->
+          <aggregation value='true' />
         </view>
         <style />
         <panes>
