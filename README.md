@@ -37,6 +37,7 @@ Self-contained: the CSV lives in the repo, so the dashboard is reproducible with
 | File | Purpose |
 |---|---|
 | [`tableau/dashboard_spec.md`](./tableau/dashboard_spec.md) | Sheet-by-sheet spec, dashboard layout, filters and interactions |
+| [`tableau/workbook/`](./tableau/workbook/) | **The Tableau workbook (.twb)** — data source typed, geographic roles assigned, all calculated fields defined |
 | [`tableau/calculated_fields.md`](./tableau/calculated_fields.md) | Every calculated field in Tableau syntax — profitability metrics and table calculations |
 | [`tableau/build_guide.md`](./tableau/build_guide.md) | Step-by-step to build and publish it on Tableau Public (free) |
 | [`data/superstore.csv`](./data/superstore.csv) | The dataset |
