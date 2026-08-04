@@ -12,7 +12,7 @@ Step-by-step to turn the spec into a live, shareable dashboard. ~45–60 min.
 3. Give `State` and `Country` the **Geographic Role** (right-click ▸ Geographic Role ▸ State / Country) so the map works.
 
 ## 2. Create the calculated fields
-Open [`calculated_fields.md`](./calculated_fields.md) and create each field (**Analysis ▸ Create Calculated Field**). Start with `Profit Ratio`, `Profit or Loss`, the LODs, then the table calcs and the what-if set.
+Open [`calculated_fields.md`](./calculated_fields.md) and create each field (**Analysis ▸ Create Calculated Field**). Start with `Profit Ratio` and `Profit or Loss`, then the table calculations.
 
 ## 3. Build the worksheets
 Follow [`dashboard_spec.md`](./dashboard_spec.md), one sheet at a time. Order that works well:
@@ -29,7 +29,6 @@ Tips:
 2. Drag sheets in per the layout diagram; use *Tiled* objects and a title text object.
 3. Add the `Region`, `Category`, `Year` filters; right-click each ▸ **Apply to Worksheets ▸ All Using This Data Source**.
 4. Dashboard menu ▸ **Actions ▸ Add Filter** → set the **map** as a filter for the other sheets.
-5. Show the `What-if Discount` parameter control.
 
 ## 5. Publish
 1. **File ▸ Save to Tableau Public As…** → sign in → name it *Executive Sales & Profitability — Superstore*.
@@ -41,5 +40,4 @@ Tips:
 - [ ] Tooltips are readable (no raw field names).
 - [ ] One consistent diverging palette for profit across all sheets.
 - [ ] Filters and the map-as-filter interaction work.
-- [ ] The what-if parameter visibly changes the simulated profit.
 - [ ] Dashboard fits without scrollbars at the chosen size.

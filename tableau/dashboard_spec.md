@@ -32,12 +32,12 @@ Small text; large value. Colour `Profit` / `Profit Ratio` green.
 - Bars: `SUM(Sales)` by `Sub-Category` (sorted desc). Line: `Cumulative % of Sales`.
 - Reference line at 80%. **Story:** top 6 of 17 sub-categories ≈ 65% of sales.
 
-### 6. Discount vs Profit — scatter + what-if
-- Marks: circles per `Sub-Category` (or order bucket). X: `Avg Discount`; Y: `Profit Ratio`; size: `Sales`.
-- Add the `What-if Discount` parameter + `Simulated Profit` line on a companion sheet.
-- **Story:** profit turns negative above ~20% discount; >30% discount = 83% loss rate.
+### 6. Discount vs Profit — scatter
 
-### 7. Top customers — bar (LOD)
+- Scatter of `Discount` against `Profit Ratio`, one mark per order, coloured by `Profit or Loss`.
+- A reference line at 0 profit makes the tipping point readable without a calculation.
+
+### 7. Top customers — bar
 - Rows: `Customer Name` (top N by `Customer Sales (lifetime)`), colour by `Customer Value Tier`.
 
 ---
@@ -56,7 +56,7 @@ Small text; large value. Colour `Profit` / `Profit Ratio` green.
 ├───────────────────────────────┼──────────────────────────────┤
 │   Sales & Profit trend         │  Sub-category Pareto          │
 ├───────────────────────────────┴──────────────────────────────┤
-│   Discount vs Profit scatter  +  [What-if Discount] parameter  │
+│   Discount vs Profit scatter                                  │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -65,7 +65,6 @@ Small text; large value. Colour `Profit` / `Profit Ratio` green.
 **Interactions:**
 - Map → **Use as Filter** (click a state filters every sheet).
 - `Region` filter set to *Apply to all using this data source*.
-- `What-if Discount` parameter drives the simulation sheet only.
 - Highlight action on `Category` between the table and the trend.
 
 ---
