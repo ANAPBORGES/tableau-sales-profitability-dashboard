@@ -24,13 +24,22 @@ Small text; large value. Colour `Profit` / `Profit Ratio` green.
 - Rows: `Category` › `Sub-Category`. Text: `SUM(Sales)`. Colour: `Profit Ratio` (diverging).
 - **Story:** Furniture sells a lot but barely profits (2.5% ratio); *Tables* and *Bookcases* are red.
 
-### 4. Sales & profit trend — dual axis
-- Columns: `MONTH(Order Date)`. Bars: `SUM(Sales)`; line: `3-Month Moving Average` (or `Profit Ratio`).
-- Optional: `YoY Sales Growth` label. **Story:** steady growth, ~+51% over the period.
+### 4. Sales trend — bars + moving average, ONE axis
+- Columns: `MONTH(Order Date)`. Bars: `SUM(Sales)`; line: `3-Month Moving Average`.
+- **Both are Sales in dollars, so they share one axis.** Do not put `Profit Ratio`
+  on a second axis against Sales: two scales aligned arbitrarily invent a
+  correlation the data does not contain. If profitability over time is wanted,
+  it is its own sheet.
+- **Story:** steady growth, ~+51% over the period.
 
 ### 5. Sub-category Pareto — combo
-- Bars: `SUM(Sales)` by `Sub-Category` (sorted desc). Line: `Cumulative % of Sales`.
-- Reference line at 80%. **Story:** top 6 of 17 sub-categories ≈ 65% of sales.
+- Bars: `SUM(Sales)` by `Sub-Category` (**sorted descending — without this the
+  cumulative line is meaningless**). Line: `Cumulative % of Sales`.
+- Reference line at 80%.
+- This is the one place a second axis is legitimate: the cumulative line is
+  *derived from* the bars, so the two scales are not arbitrarily aligned. It is
+  the exception, not a licence for dual axes elsewhere.
+- **Story:** top 6 of 17 sub-categories ≈ 65% of sales.
 
 ### 6. Discount vs Profit — scatter
 
@@ -38,7 +47,9 @@ Small text; large value. Colour `Profit` / `Profit Ratio` green.
 - A reference line at 0 profit makes the tipping point readable without a calculation.
 
 ### 7. Top customers — bar
-- Rows: `Customer Name` (top N by `Customer Sales (lifetime)`), colour by `Customer Value Tier`.
+- Rows: `Customer Name`, filtered to Top 15 by `SUM(Sales)`. Bars: `SUM(Sales)`,
+  a single colour — the bar length already encodes size.
+- Colour by `Profit or Loss` only if the point is which big customers lose money.
 
 ---
 
