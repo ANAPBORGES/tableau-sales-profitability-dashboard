@@ -36,6 +36,8 @@ Self-contained: the CSV lives in the repo, so the dashboard is reproducible with
 
 | File | Purpose |
 |---|---|
+| [`tableau/dashboard_design.md`](./tableau/dashboard_design.md) | **The design** — layout grid, interaction model, colour roles, type scale, and the reasoning behind each |
+| [`tableau/finishing_guide.md`](./tableau/finishing_guide.md) | The last 30 minutes — sorting, titles, reference lines, viz-in-tooltip, colour discipline |
 | [`tableau/dashboard_spec.md`](./tableau/dashboard_spec.md) | Sheet-by-sheet spec, dashboard layout, filters and interactions |
 | [`tableau/workbook/`](./tableau/workbook/) | **The Tableau workbook (.twb)** — data source typed, geographic roles assigned, all calculated fields defined |
 | [`tableau/calculated_fields.md`](./tableau/calculated_fields.md) | Every calculated field in Tableau syntax — profitability metrics and table calculations |
