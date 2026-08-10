@@ -123,7 +123,7 @@ On each dashboard, drag a **Navigation** object from the Objects panel, set its 
 
 ## 7. The closing sentence (2 min)
 
-At the bottom of Painel 1, add a text object stating the finding:
+At the bottom of Executive Summary, add a text object stating the finding:
 
 > 10 of 49 states lose money. Orders discounted above 30% lose money 83% of the time — break-even sits at roughly 20%.
 

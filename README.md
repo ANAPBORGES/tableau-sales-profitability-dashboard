@@ -1,12 +1,11 @@
 # Tableau — Executive Sales & Profitability Dashboard
-> An interactive **Tableau** dashboard on the Superstore dataset, focused on *where the business makes money and where it loses it* — filled profit maps, category profitability, a sub-category Pareto and a discount scatter. Built to Tableau's strengths (mapping, interactivity, visual comparison), and fully specced for reproduction.
+> A published, interactive **Tableau** dashboard on the Superstore dataset, focused on *where the business makes money and where it loses it* — filled profit maps, category profitability, a sub-category Pareto and a discount scatter. Built to Tableau's strengths (mapping, interactivity, visual comparison), and fully specced for reproduction.
 
 [![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?style=flat&logo=tableau&logoColor=white)](https://public.tableau.com/)
 [![Data](https://img.shields.io/badge/Data-included%20in%20repo-34A853?style=flat)](./data/superstore.csv)
-[![Status](https://img.shields.io/badge/Status-Workbook%20built%20·%20publishing-yellow?style=flat)]()
+[![Status](https://img.shields.io/badge/Status-Live-brightgreen?style=flat)]()
 
-<!-- After publishing, replace the line below with your live link:
-[![Live Dashboard](https://img.shields.io/badge/Live-Tableau%20Public-E97627?style=flat&logo=tableau)](YOUR_TABLEAU_PUBLIC_URL) -->
+[![Live Dashboard](https://img.shields.io/badge/Live-Tableau%20Public-E97627?style=flat&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/ana.paula.araujo.borges/viz/PortiflioTableau/Home)
 
 ---
 
@@ -87,10 +86,11 @@ the two projects read as one portfolio.
 
 ## Live dashboard
 
-🔗 **Tableau Public:** _publishing in progress_ — see [`build_guide.md`](./tableau/build_guide.md).
+🔗 **[Open it on Tableau Public](https://public.tableau.com/app/profile/ana.paula.araujo.borges/viz/PortiflioTableau/Home)** — five pages, click a state or a cell to filter
+the page, and the filters carry across every view.
 
-Publish from a **`.twbx`**, not the `.twb`: the workbook carries a data extract and five
-layout images, and only the packaged format takes them along.
+Published from the packaged `.twbx`: a `.twb` stores the extract and the layout images as
+paths, so only the packaged format takes them along.
 
 | Home | Executive Summary |
 |---|---|
