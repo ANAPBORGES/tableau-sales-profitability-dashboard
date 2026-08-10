@@ -1,10 +1,45 @@
-# Finishing guide — the last 30 minutes
+# Finishing guide — what is left
 
-The workbook ships with its structure done: 16 worksheets, 4 dashboards, filter actions, a card layout and a type scale. What remains is the judgement work, which is faster to do by hand than to specify — and which is where the difference between *assembled* and *designed* actually lands.
+The workbook ships built: 20 worksheets, 5 dashboards, explicit sorts on every bar chart,
+diverging colour centred on zero, reference lines at zero and at 80%, the header frame and
+the footers. **Three things remain**, and each is faster to do by hand than to specify.
 
-Ordered by payoff per minute.
+## 1. Save as `.twbx` before anything else (1 min)
+
+The workbook carries a data extract, and Tableau put it in the Windows temp folder — a
+folder Windows eventually clears. A `.twb` also stores the five layout images as *paths*, so
+they break for anyone else who opens it. **File ▸ Save As ▸ .twbx** packages both.
+
+## 2. Viz in tooltip on the map (5 min)
+
+The single feature that turns the map from a picture into an instrument.
+
+1. Open `Profit by State` ▸ Marks card ▸ **Tooltip**
+2. **Insert ▸ Sheets ▸ `Profit by Sub-Category`**
+3. Edit the inserted tag to `maxwidth="320" maxheight="260"`
+4. Delete the rest of the default tooltip text except State, Sales, Profit
+
+Hovering a state then answers "why is Texas red?" under the cursor, without a click. Keep it
+under ~320×260 — a tooltip that fills the screen is a modal, and it covers the thing being
+pointed at.
+
+## 3. Navigation buttons (3 min)
+
+The Home page navigates through the workbook tabs. For real buttons, drag a **Navigation**
+object onto each dashboard, set its target and label it.
 
 ---
+
+## Before publishing
+
+- [ ] Saved as `.twbx`
+- [ ] It reads correctly both filtered and unfiltered — including the title and the closing line
+- [ ] Clicking a mark filters the page on every dashboard
+- [ ] Link pasted into the README
+
+---
+
+## What was done, and why — kept for the record
 
 ## 1. Sort every bar chart (5 min, biggest payoff)
 

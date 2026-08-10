@@ -3,7 +3,7 @@
 
 [![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?style=flat&logo=tableau&logoColor=white)](https://public.tableau.com/)
 [![Data](https://img.shields.io/badge/Data-included%20in%20repo-34A853?style=flat)](./data/superstore.csv)
-[![Status](https://img.shields.io/badge/Status-Spec%20complete%20·%20publishing-yellow?style=flat)]()
+[![Status](https://img.shields.io/badge/Status-Workbook%20built%20·%20publishing-yellow?style=flat)]()
 
 <!-- After publishing, replace the line below with your live link:
 [![Live Dashboard](https://img.shields.io/badge/Live-Tableau%20Public-E97627?style=flat&logo=tableau)](YOUR_TABLEAU_PUBLIC_URL) -->
@@ -16,7 +16,7 @@
 **Stakeholders:** Commercial, Finance, and executive leadership
 **Business question:** *Which regions, categories and customers are actually profitable, and how much profit is discounting costing us?*
 
-Where the [Power BI project](https://github.com/ANAPBORGES/saas-financial-kpis) frames the Superstore data as **financial KPIs** (MRR, churn), this Tableau dashboard takes the **executive sales & profitability** angle — geography, product mix, and a hands-on discount lever — leveraging what Tableau does best: mapping, interactivity, and Level-of-Detail analysis.
+Where the [Power BI project](https://github.com/ANAPBORGES/saas-financial-kpis) frames the Superstore data as **financial KPIs** — revenue growth, customer value and a discount what-if — this Tableau dashboard takes the **executive sales & profitability** angle — geography, product mix, and a hands-on discount lever — leveraging what Tableau does best: mapping, interactivity, and Level-of-Detail analysis.
 
 ---
 
@@ -39,7 +39,8 @@ Self-contained: the CSV lives in the repo, so the dashboard is reproducible with
 | [`tableau/dashboard_design.md`](./tableau/dashboard_design.md) | **The design** — layout grid, interaction model, colour roles, type scale, and the reasoning behind each |
 | [`tableau/finishing_guide.md`](./tableau/finishing_guide.md) | The last 30 minutes — sorting, titles, reference lines, viz-in-tooltip, colour discipline |
 | [`tableau/dashboard_spec.md`](./tableau/dashboard_spec.md) | Sheet-by-sheet spec, dashboard layout, filters and interactions |
-| [`tableau/workbook/`](./tableau/workbook/) | **The Tableau workbook (.twb)** — data source typed, geographic roles assigned, all calculated fields defined |
+| [`tableau/workbook/Portifolio_Tableau.twb`](./tableau/workbook/) | **The workbook** — 5 dashboards, 20 worksheets, sorted, coloured and annotated |
+| [`tableau/layout/`](./tableau/layout/) | The header and cover images the dashboards use |
 | [`tableau/calculated_fields.md`](./tableau/calculated_fields.md) | Every calculated field in Tableau syntax — profitability metrics and table calculations |
 | [`tableau/build_guide.md`](./tableau/build_guide.md) | Step-by-step to build and publish it on Tableau Public (free) |
 | [`data/superstore.csv`](./data/superstore.csv) | The dataset |
@@ -63,10 +64,33 @@ Self-contained: the CSV lives in the repo, so the dashboard is reproducible with
 
 ---
 
+## Dashboard pages
+
+| Page | What it answers |
+|---|---|
+| **Home** | cover and navigation |
+| **Executive Summary** | how much, where, and why — KPIs, the money at stake, the profit map, yearly growth, discount vs margin |
+| **Commercial Analysis** | margin, mix and concentration — margin over time, monthly sales, Pareto, region × category, the loss-makers named |
+| **Customers** | who buys and who loses money — value per customer, the segment × region grid, every account ranked |
+| **Price & Discount** | where discounting turns into loss — loss rate by discount band, ship mode, discount by category |
+
+Sheet-by-sheet detail in [`dashboard_spec.md`](./tableau/dashboard_spec.md). Every metric
+carries the same name as in the Power BI project; the dictionary is at the bottom of
+[`calculated_fields.md`](./tableau/calculated_fields.md).
+
+All five pages share one frame — a 56 px header with the mark and the current tab
+highlighted, white cards on a `#F2F4F8` ground — the same values as the Power BI report, so
+the two projects read as one portfolio.
+
+---
+
 ## Live dashboard
 
 🔗 **Tableau Public:** _publishing in progress_ — see [`build_guide.md`](./tableau/build_guide.md).
-Screenshots will be added to [`assets/`](./assets/) once published.
+
+Publish from a **`.twbx`**, not the `.twb`: the workbook carries a data extract and five
+layout images, and only the packaged format takes them along. Screenshots land in
+[`assets/`](./assets/) once it is live.
 
 ---
 

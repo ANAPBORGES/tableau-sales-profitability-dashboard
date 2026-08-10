@@ -1,5 +1,12 @@
 # Dashboard design — Executive Sales & Profitability
 
+> **As built:** this file is the reasoning — hierarchy, interaction, colour, type. The
+> layout it sketches was the first pass; the workbook that shipped has five dashboards with
+> a shared header frame, and the yearly comparison moved to page one while the monthly
+> detail moved to page two. [`dashboard_spec.md`](./dashboard_spec.md) is the record of what
+> exists. The principles below did not change.
+
+
 The build spec for the dashboard, at the level of detail that decides whether it reads as competent or as senior. [`dashboard_spec.md`](./dashboard_spec.md) lists *what sheets exist*; this file is about **structure, interaction and hierarchy** — the part that is design rather than assembly.
 
 ---
