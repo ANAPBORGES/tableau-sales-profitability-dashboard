@@ -89,8 +89,14 @@ the two projects read as one portfolio.
 🔗 **Tableau Public:** _publishing in progress_ — see [`build_guide.md`](./tableau/build_guide.md).
 
 Publish from a **`.twbx`**, not the `.twb`: the workbook carries a data extract and five
-layout images, and only the packaged format takes them along. Screenshots land in
-[`assets/`](./assets/) once it is live.
+layout images, and only the packaged format takes them along.
+
+**Home**
+
+![Home](./assets/01_home.png)
+
+The four analysis pages are photographed once the header band is re-fitted — see
+[`finishing_guide.md`](./tableau/finishing_guide.md).
 
 ---
 

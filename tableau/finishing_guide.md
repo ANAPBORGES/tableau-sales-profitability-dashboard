@@ -10,7 +10,16 @@ The workbook carries a data extract, and Tableau put it in the Windows temp fold
 folder Windows eventually clears. A `.twb` also stores the five layout images as *paths*, so
 they break for anyone else who opens it. **File ▸ Save As ▸ .twbx** packages both.
 
-## 2. Viz in tooltip on the map (5 min)
+## 2. Re-fit the header band (1 min)
+
+The header images were first rendered at 2x (2400 x 112) for sharpness. The cover scales to
+its zone, but the band was drawn at natural size and **centre-cropped** — the logo fell
+outside the crop and the nav labels came out at double size. They are now 1:1 (1200 x 56),
+which is exactly the zone, so natural size is the right size.
+
+Reopen the `.twb` so it picks up the new files, check the band, then save the `.twbx` again.
+
+## 3. Viz in tooltip on the map (5 min)
 
 The single feature that turns the map from a picture into an instrument.
 
@@ -23,7 +32,7 @@ Hovering a state then answers "why is Texas red?" under the cursor, without a cl
 under ~320×260 — a tooltip that fills the screen is a modal, and it covers the thing being
 pointed at.
 
-## 3. Navigation buttons (3 min)
+## 4. Navigation buttons (3 min)
 
 The Home page navigates through the workbook tabs. For real buttons, drag a **Navigation**
 object onto each dashboard, set its target and label it.
