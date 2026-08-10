@@ -91,12 +91,17 @@ the two projects read as one portfolio.
 Publish from a **`.twbx`**, not the `.twb`: the workbook carries a data extract and five
 layout images, and only the packaged format takes them along.
 
-**Home**
+| Home | Executive Summary |
+|---|---|
+| ![Home](./assets/01_home.png) | ![Executive Summary](./assets/02_executive_summary.png) |
 
-![Home](./assets/01_home.png)
+| Commercial Analysis | Customers |
+|---|---|
+| ![Commercial Analysis](./assets/03_commercial_analysis.png) | ![Customers](./assets/04_customers.png) |
 
-The four analysis pages are photographed once the header band is re-fitted — see
-[`finishing_guide.md`](./tableau/finishing_guide.md).
+| Price & Discount |
+|---|
+| ![Price and Discount](./assets/05_price_discount.png) |
 
 ---
 
