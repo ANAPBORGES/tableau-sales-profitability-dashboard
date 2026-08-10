@@ -2,16 +2,9 @@
 
 The workbook ships built: 20 worksheets, 5 dashboards, explicit sorts on every bar chart,
 diverging colour centred on zero, reference lines at zero and at 80%, the header frame and
-the footers. **Three things remain**, and each is faster to do by hand than to specify.
+the footers. **Two things remain**, and each is faster to do by hand than to specify. The packaged `.twbx` in [`tableau/workbook/`](./workbook/) is current and self-contained.
 
-## 1. Save as `.twbx` again (1 min)
-
-The packaged file on disk predates the header images being re-rendered at 1:1, so it still
-carries the cropped band. Reopen the `.twb`, confirm the header, and save the `.twbx` over it.
-
-
-
-## 2. Viz in tooltip on the map (5 min)
+## 1. Viz in tooltip on the map (5 min)
 
 The single feature that turns the map from a picture into an instrument.
 
@@ -24,7 +17,7 @@ Hovering a state then answers "why is Texas red?" under the cursor, without a cl
 under ~320×260 — a tooltip that fills the screen is a modal, and it covers the thing being
 pointed at.
 
-## 3. Navigation buttons (3 min)
+## 2. Navigation buttons (3 min)
 
 The Home page navigates through the workbook tabs. For real buttons, drag a **Navigation**
 object onto each dashboard, set its target and label it.
@@ -33,7 +26,6 @@ object onto each dashboard, set its target and label it.
 
 ## Before publishing
 
-- [ ] Saved as `.twbx`
 - [ ] It reads correctly both filtered and unfiltered — including the title and the closing line
 - [ ] Clicking a mark filters the page on every dashboard
 - [ ] Link pasted into the README

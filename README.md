@@ -39,7 +39,8 @@ Self-contained: the CSV lives in the repo, so the dashboard is reproducible with
 | [`tableau/dashboard_design.md`](./tableau/dashboard_design.md) | **The design** — layout grid, interaction model, colour roles, type scale, and the reasoning behind each |
 | [`tableau/finishing_guide.md`](./tableau/finishing_guide.md) | The last 30 minutes — sorting, titles, reference lines, viz-in-tooltip, colour discipline |
 | [`tableau/dashboard_spec.md`](./tableau/dashboard_spec.md) | Sheet-by-sheet spec, dashboard layout, filters and interactions |
-| [`tableau/workbook/Portifolio_Tableau.twb`](./tableau/workbook/) | **The workbook** — 5 dashboards, 20 worksheets, sorted, coloured and annotated |
+| [`tableau/workbook/Portifolio_Tableau.twbx`](./tableau/workbook/) | **Open this one** — packaged workbook: 5 dashboards, 20 worksheets, the data extract and the layout images, all self-contained |
+| [`tableau/workbook/Portifolio_Tableau.twb`](./tableau/workbook/) | The same workbook unpackaged — readable XML, diffable, but it needs the CSV and the images at their paths |
 | [`tableau/layout/`](./tableau/layout/) | The header and cover images the dashboards use |
 | [`tableau/calculated_fields.md`](./tableau/calculated_fields.md) | Every calculated field in Tableau syntax — profitability metrics and table calculations |
 | [`tableau/build_guide.md`](./tableau/build_guide.md) | Step-by-step to build and publish it on Tableau Public (free) |
